@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodel Dichoso | Backend Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-400">Rodel Dichoso</h1>
+            <button id="menu-toggle" class="md:hidden text-gray-300 text-2xl focus:outline-none">☰</button>
+            <nav id="nav-menu" class="hidden md:flex space-x-4 text-sm md:text-base text-gray-300">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-gray-800">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-blue-400">About</a>
+            <a href="#skills" class="block py-2 text-gray-300 hover:text-blue-400">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-300 hover:text-blue-400">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-blue-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-800 to-gray-900 px-4">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Hey, I'm Rodel</h2>
+        <p class="text-xl md:text-2xl text-gray-400 mb-6">A backend developer who builds functional web systems</p>
+        <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Explore
+            My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4">
+        <div class="container mx-auto max-w-3xl text-center">
+            <h3 class="text-3xl font-bold text-blue-400 mb-6">About Me</h3>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                I'm a backend developer who focuses on building robust systems using Laravel, Express.js, MySQL, and
+                other backend tech. I don’t do flashy UI — I care about clean architecture, authentication, API logic,
+                database structure, and role-based access. I believe in functionality, security, and simplicity.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-800 px-4">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold text-blue-400 mb-8">Backend Skills</h3>
+            <div class="flex flex-wrap justify-center gap-4 text-gray-200">
+                <span class="bg-gray-700 px-4 py-2 rounded">PHP</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">Laravel</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">Express.js</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">RESTful APIs</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">JWT Auth</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">Role/Permission Systems</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">MySQL</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">Knex.js</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">Eloquent ORM</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">Postman</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">XAMPP</span>
+                <span class="bg-gray-700 px-4 py-2 rounded">Git / GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h3 class="text-3xl font-bold text-center text-blue-400 mb-12">Projects</h3>
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">Inventory System</h4>
+                    <p class="text-gray-300 mb-4">Laravel-based inventory app with role-based access, stock tracking,
+                        and full backend control. UI kept minimal.</p>
+                    <a href="#" class="text-blue-400 hover:underline">View On Github</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">Team Task Manager</h4>
+                    <p class="text-gray-300 mb-4">Task manager system built with Laravel, Breeze, and spatie/permission.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:underline">View On Github</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h4 class="text-xl font-semibold mb-2">Cake Shop API</h4>
+                    <p class="text-gray-300 mb-4">Express.js REST API for a fictional cake shop. Handles products,
+                        orders, auth — built with MySQL + Knex.js.</p>
+                    <a href="#" class="text-blue-400 hover:underline">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4">
+        <div class="container mx-auto max-w-lg">
+            <h3 class="text-3xl font-bold text-center text-blue-400 mb-6">Contact Me</h3>
+            <form action="https://formsubmit.co/youremail@gmail.com" method="POST" class="space-y-4">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://rodeldichoso.github.io/portfolio-pages/thanks.html">
+                <input type="text" name="name" placeholder="Your Name" required
+                    class="w-full bg-gray-800 text-white border border-gray-600 px-4 py-2 rounded focus:ring-blue-400 focus:outline-none" />
+                <input type="email" name="email" placeholder="Your Email" required
+                    class="w-full bg-gray-800 text-white border border-gray-600 px-4 py-2 rounded focus:ring-blue-400 focus:outline-none" />
+                <textarea name="message" placeholder="Your Message" required
+                    class="w-full bg-gray-800 text-white border border-gray-600 px-4 py-2 rounded focus:ring-blue-400 focus:outline-none"></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center text-sm text-gray-400">
+        © 2025 Rodel Dichoso. Backend first, UI optional.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

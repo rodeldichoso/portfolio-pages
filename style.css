@@ -1,0 +1,17 @@
+/* Custom styles (add more as needed) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mobile-menu a {
+  transition: color 0.3s;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+/* Optional: Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
