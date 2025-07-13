@@ -7,6 +7,8 @@
     <title>Rodel Dichoso | Backend Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+        crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-gray-900 text-white font-sans">
@@ -14,36 +16,46 @@
     <!-- Navbar -->
     <header class="bg-gray-800 shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-400">Rodel Dichoso</h1>
+            <h1 class="text-xl font-bold text-blue-400">
+                <i class="fas fa-code mr-1"></i> Rodel Dichoso
+            </h1>
             <button id="menu-toggle" class="md:hidden text-gray-300 text-2xl focus:outline-none">☰</button>
             <nav id="nav-menu" class="hidden md:flex space-x-4 text-sm md:text-base text-gray-300">
-                <a href="#about" class="hover:text-blue-400 transition">About</a>
-                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
-                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
-                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                <a href="#about" class="hover:text-blue-400 transition"><i class="fas fa-user mr-1"></i>About</a>
+                <a href="#skills" class="hover:text-blue-400 transition"><i class="fas fa-tools mr-1"></i>Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition"><i
+                        class="fas fa-folder-open mr-1"></i>Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition"><i
+                        class="fas fa-envelope mr-1"></i>Contact</a>
             </nav>
         </div>
         <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-gray-800">
-            <a href="#about" class="block py-2 text-gray-300 hover:text-blue-400">About</a>
-            <a href="#skills" class="block py-2 text-gray-300 hover:text-blue-400">Skills</a>
-            <a href="#projects" class="block py-2 text-gray-300 hover:text-blue-400">Projects</a>
-            <a href="#contact" class="block py-2 text-gray-300 hover:text-blue-400">Contact</a>
+            <a href="#about" class="block py-2 text-gray-300 hover:text-blue-400"><i
+                    class="fas fa-user mr-1"></i>About</a>
+            <a href="#skills" class="block py-2 text-gray-300 hover:text-blue-400"><i
+                    class="fas fa-tools mr-1"></i>Skills</a>
+            <a href="#projects" class="block py-2 text-gray-300 hover:text-blue-400"><i
+                    class="fas fa-folder-open mr-1"></i>Projects</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-blue-400"><i
+                    class="fas fa-envelope mr-1"></i>Contact</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section
         class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-800 to-gray-900 px-4">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4">Hey, I'm Rodel</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+            <i class="fas fa-terminal mr-2"></i>Hey, I'm Rodel
+        </h2>
         <p class="text-xl md:text-2xl text-gray-400 mb-6">A backend developer who builds functional web systems</p>
-        <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Explore
-            My Work</a>
+        <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"><i
+                class="fas fa-eye mr-2"></i>Explore My Work</a>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-16 px-4">
         <div class="container mx-auto max-w-3xl text-center">
-            <h3 class="text-3xl font-bold text-blue-400 mb-6">About Me</h3>
+            <h3 class="text-3xl font-bold text-blue-400 mb-6"><i class="fas fa-user-circle mr-2"></i>About Me</h3>
             <p class="text-lg text-gray-300 leading-relaxed">
                 I'm a backend developer who focuses on building robust systems using Laravel, Express.js, MySQL, and
                 other backend tech. I don’t do flashy UI — I care about clean architecture, authentication, API logic,
@@ -55,20 +67,20 @@
     <!-- Skills Section -->
     <section id="skills" class="py-16 bg-gray-800 px-4">
         <div class="container mx-auto text-center">
-            <h3 class="text-3xl font-bold text-blue-400 mb-8">Backend Skills</h3>
+            <h3 class="text-3xl font-bold text-blue-400 mb-8"><i class="fas fa-tools mr-2"></i>Backend Skills</h3>
             <div class="flex flex-wrap justify-center gap-4 text-gray-200">
-                <span class="bg-gray-700 px-4 py-2 rounded">PHP</span>
+                <span class="bg-gray-700 px-4 py-2 rounded"><i class="fab fa-php mr-1"></i>PHP</span>
                 <span class="bg-gray-700 px-4 py-2 rounded">Laravel</span>
-                <span class="bg-gray-700 px-4 py-2 rounded">Express.js</span>
+                <span class="bg-gray-700 px-4 py-2 rounded"><i class="fab fa-node-js mr-1"></i>Express.js</span>
                 <span class="bg-gray-700 px-4 py-2 rounded">RESTful APIs</span>
                 <span class="bg-gray-700 px-4 py-2 rounded">JWT Auth</span>
                 <span class="bg-gray-700 px-4 py-2 rounded">Role/Permission Systems</span>
-                <span class="bg-gray-700 px-4 py-2 rounded">MySQL</span>
+                <span class="bg-gray-700 px-4 py-2 rounded"><i class="fas fa-database mr-1"></i>MySQL</span>
                 <span class="bg-gray-700 px-4 py-2 rounded">Knex.js</span>
                 <span class="bg-gray-700 px-4 py-2 rounded">Eloquent ORM</span>
-                <span class="bg-gray-700 px-4 py-2 rounded">Postman</span>
+                <span class="bg-gray-700 px-4 py-2 rounded"><i class="fas fa-vial mr-1"></i>Postman</span>
                 <span class="bg-gray-700 px-4 py-2 rounded">XAMPP</span>
-                <span class="bg-gray-700 px-4 py-2 rounded">Git / GitHub</span>
+                <span class="bg-gray-700 px-4 py-2 rounded"><i class="fab fa-git-alt mr-1"></i>Git / GitHub</span>
             </div>
         </div>
     </section>
@@ -76,7 +88,8 @@
     <!-- Projects Section -->
     <section id="projects" class="py-16 px-4">
         <div class="container mx-auto">
-            <h3 class="text-3xl font-bold text-center text-blue-400 mb-12">Projects</h3>
+            <h3 class="text-3xl font-bold text-center text-blue-400 mb-12"><i
+                    class="fas fa-folder-open mr-2"></i>Projects</h3>
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
                     <h4 class="text-xl font-semibold mb-2">Inventory System</h4>
@@ -85,7 +98,8 @@
                         kept minimal.
                     </p>
                     <a href="https://github.com/rodeldichoso/inventory-system-laravel"
-                        class="text-blue-400 hover:underline">View on GitHub</a>
+                        class="text-blue-400 hover:underline hover:text-blue-300 transition"><i
+                            class="fab fa-github mr-1"></i>View on GitHub</a>
                 </div>
 
                 <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition border border-yellow-500">
@@ -96,38 +110,48 @@
                         Swagger docs.
                     </p>
                     <a href="https://github.com/rodeldichoso/e-commerce-api-express-js"
-                        class="text-blue-400 hover:underline">View on GitHub</a>
+                        class="text-blue-400 hover:underline hover:text-blue-300 transition"><i
+                            class="fab fa-github mr-1"></i>View on GitHub</a>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 px-4">
-        <div class="container mx-auto max-w-lg">
-            <h3 class="text-3xl font-bold text-center text-blue-400 mb-6">Contact Me</h3>
-            <form action="https://formsubmit.co/rodeldichoso1133@gmail.com" method="POST" class="space-y-4">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://rodeldichoso.github.io/portfolio-pages/thanks.html">
-                <input type="hidden" name="_template" value="box">
-                <input type="text" name="_honey" style="display:none">
-                <input type="text" name="name" placeholder="Your Name" required
-                    class="w-full bg-gray-800 text-white border border-gray-600 px-4 py-2 rounded focus:ring-blue-400 focus:outline-none" />
-                <input type="email" name="email" placeholder="Your Email" required
-                    class="w-full bg-gray-800 text-white border border-gray-600 px-4 py-2 rounded focus:ring-blue-400 focus:outline-none" />
-                <textarea name="message" placeholder="Your Message" required
-                    class="w-full bg-gray-800 text-white border border-gray-600 px-4 py-2 rounded focus:ring-blue-400 focus:outline-none"></textarea>
-                <button type="submit"
-                    class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200">Send</button>
-            </form>
+        <div class="container mx-auto max-w-lg text-center">
+            <h3 class="text-3xl font-bold text-blue-400 mb-6"><i class="fas fa-envelope mr-2"></i>Contact Me</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                My contact form is currently under maintenance. In the meantime, feel free to reach out to me directly:
+            </p>
+            <div class="bg-gray-800 p-4 rounded-lg inline-block text-left space-y-3">
+                <p class="text-white flex items-center gap-2">
+                    <i class="fas fa-envelope text-blue-400"></i>
+                    <a href="mailto:rodeldichoso1133@gmail.com" class="hover:underline text-blue-400">
+                        rodeldichoso1133@gmail.com
+                    </a>
+                </p>
+                <p class="text-white flex items-center gap-2">
+                    <i class="fab fa-github text-blue-400"></i>
+                    <a href="https://github.com/rodeldichoso" target="_blank" class="hover:underline text-blue-400">
+                        github.com/rodeldichoso
+                    </a>
+                </p>
+            </div>
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="bg-gray-800 py-6 text-center text-sm text-gray-400">
-        © 2025 Rodel Dichoso.
+        <div class="flex justify-center gap-6 mb-2 text-xl">
+            <a href="https://github.com/rodeldichoso" target="_blank" class="hover:text-blue-400">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:rodeldichoso1133@gmail.com" class="hover:text-blue-400">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>© 2025 Rodel Dichoso.</p>
     </footer>
 
     <script src="script.js"></script>
